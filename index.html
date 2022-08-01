@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Atividade S1-24 Criando formulário de cadastro">
+    <link rel="icon" href="https://kenzie.com.br/favicon.jpeg">
+    <title>S1 - 24 | Formulário de cadastro</title>
+</head>
+
+<body>
+    <form>
+        <label for="nome">Nome</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui..." maxlength="70" required><br><br>
+        <label for="email">E-mail</label><br>
+        <input type="text" id="email" name="email" placeholder="Digite seu email aqui..." maxlength="35"
+            required><br><br>
+        <label for="descricao">Descrição</label><br>
+        <textarea 
+            name="descricao" 
+            id="descricao" 
+            cols="30" 
+            rows="5" 
+            required
+            placeholder="Fale mais sobre você..."
+        ></textarea><br><br>
+        <label for="modulo">Módulo</label><br>
+        <select name="modulo" id="modulo" required>
+            <option value="">Escolher módulo</option>
+            <option value="m1">M1</option>
+            <option value="m2">M2</option>
+            <option value="m3">M3</option>
+            <option value="m4">M4</option>
+            <option value="m5">M5</option>
+            <option value="m6">M6</option>
+            <option value="m7">M7</option>
+            <option value="m8">M8</option>
+            <option value="m9">M9</option>
+            <option value="m10">M10</option>
+        </select><br><br>
+        <label for="senha">Senha</label><br>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha aqui..." required
+            maxlength="20"><br><br>
+        <label for="confSenha">Confirmar Senha</label><br>
+        <input type="password" id="confSenha" name="confSenha" placeholder="Digite sua senha novamente aqui..." required
+            maxlength="20"><br><br>
+        <p>Deseja receber novidades em seu e-mail???</p>
+        <label for="sim">Sim</label>
+        <input type="radio" id="sim" required name="novidades" value="sim">
+        <label for="nao">Não</label>
+        <input type="radio" id="nao" required name="novidades" value="nao"><br><br>
+        <button onclick="return false" type="submit">Cadastrar</button>
+    </form>
+</body>
+
+</html>
